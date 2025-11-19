@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'dash-luxury',
-  description: 'Created with dash-luxury',
+  title: 'Luxury Dashboard',
+  description: 'Premium dashboard for luxury analytics and insights',
   generator: 'dash-luxury',
   icons: {
     icon: [
