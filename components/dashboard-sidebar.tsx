@@ -27,8 +27,13 @@ export function DashboardSidebar() {
       )}
     >
       <div className={cn("flex items-center h-16 px-4 shrink-0", isCollapsed ? "justify-center" : "justify-between")}>
-        {!isCollapsed && <h1 className="text-2xl font-bold text-foreground whitespace-nowrap">Luxury</h1>}
-        {isCollapsed && <span className="text-xl font-bold text-primary">EC</span>}
+        {!isCollapsed && (
+          <div className="flex items-center gap-2">
+            <img src="/icon.png" alt="Luxury" className="h-8 w-8 object-contain" />
+            <h1 className="text-2xl font-bold text-foreground whitespace-nowrap">Luxury</h1>
+          </div>
+        )}
+        {isCollapsed && <img src="/icon.png" alt="Luxury" className="h-8 w-8 object-contain" />}
       </div>
       
       <nav className="flex-1 px-2 space-y-1 py-4">
